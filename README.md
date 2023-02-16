@@ -1,3 +1,3 @@
 # Genirate_Labirint
 
-![image](https://github.com/TrewCar/GenirateLabirint/blob/master/Image/Genirate_Labirint.png)
+![image](https://github.com/TrewCar/Genirate_Labirint/blob/master/Image/Genirate_Labirint.png)
