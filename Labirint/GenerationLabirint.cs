@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-class GenirateLabirint
+class GenerationLabirint
 {
     /// <summary>
     /// На данной перегрузке работают все функции для генерации
@@ -12,7 +12,7 @@ class GenirateLabirint
     /// <param name="timer"> Таймер для создания подобии эволюции создания </param>
     /// <param name="StartPosition"> Начальная позиция генерации </param>
     /// <param name="RectSize"> Размер клетки </param>
-    public GenirateLabirint(PictureBox picture, Timer timer, Point StartPosition, int RectSize)
+    public GenerationLabirint(PictureBox picture, Timer timer, Point StartPosition, int RectSize)
     {
         pictureBox = picture;
         this.timer = timer;
@@ -28,7 +28,7 @@ class GenirateLabirint
     /// <param name="RectSize"> Размер клетки </param>
     /// <param name="ColorWall"> Цвет заднего фона </param>
     /// <param name="ColorHead"> Цвет головы </param>
-    public GenirateLabirint(PictureBox picture, Timer timer, Point StartPosition, int RectSize, Brush ColorWall, Brush ColorHead)
+    public GenerationLabirint(PictureBox picture, Timer timer, Point StartPosition, int RectSize, Brush ColorWall, Brush ColorHead)
     {
         pictureBox = picture;
         this.timer = timer;
@@ -44,7 +44,7 @@ class GenirateLabirint
     /// <param name="StartPosition"> Начальная позиция генерации </param>
     /// <param name="RectSize"> Размер клетки </param>
     /// <param name="ColorWall"> Цвет заднего фона </param>
-    public GenirateLabirint(PictureBox picture, Point StartPosition, int RectSize, Brush ColorWall)
+    public GenerationLabirint(PictureBox picture, Point StartPosition, int RectSize, Brush ColorWall)
     {
         pictureBox = picture;
 
@@ -57,7 +57,7 @@ class GenirateLabirint
     /// <param name="picture">изображение нужное для отрисовки</param>
     /// <param name="StartPosition"> Начальная позиция генерации </param>
     /// <param name="RectSize"> Размер клетки </param>
-    public GenirateLabirint(PictureBox picture, Point StartPosition, int RectSize)
+    public GenerationLabirint(PictureBox picture, Point StartPosition, int RectSize)
     {
         pictureBox = picture;
         CreateSettings(StartPosition, RectSize);
@@ -114,7 +114,7 @@ class GenirateLabirint
     /// <summary>
     /// Метод по тиковому созданию лабиринту 
     /// </summary>
-    public void GenirateOnTick()
+    public void GenerationOnTick()
     {
         Screen[NowPosition.X, NowPosition.Y] = 1;
         List<Point> put = GetPoint();
@@ -139,7 +139,7 @@ class GenirateLabirint
     /// <summary>
     /// Полное создание лабиринта
     /// </summary>
-    public void GenirateFull()
+    public void GenerationFull()
     {
         while (true)
         {

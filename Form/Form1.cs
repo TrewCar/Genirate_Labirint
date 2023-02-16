@@ -11,7 +11,7 @@ public partial class Form1 : Form
 
     private int RectSZ = 10;
 
-    private GenirateLabirint labirint;
+    private GenerationLabirint labirint;
 
     private void Form1_Load(object sender, EventArgs e)
     {
@@ -26,7 +26,7 @@ public partial class Form1 : Form
         var x = int.TryParse(XPos.Text, out int X) ? Limit(X, Width / RectSZ) : 0;
         var y = int.TryParse(YPos.Text, out int Y) ? Limit(Y, Height / RectSZ) : 0;
 
-        labirint = new GenirateLabirint(pictureBox1, timer1, new Point(x, y), RectSZ);
+        labirint = new GenerationLabirint(pictureBox1, timer1, new Point(x, y), RectSZ);
 
         Start();
     }
@@ -38,7 +38,7 @@ public partial class Form1 : Form
     {
         if (FastGenerate.Checked)
         {
-            labirint.GenirateFull();
+            labirint.GenerationFull();
         }
         else
         {
@@ -47,6 +47,6 @@ public partial class Form1 : Form
     }
     private void Timer1_Tick(object sender, EventArgs e)
     {
-        labirint.GenirateOnTick();
+        labirint.GenerationOnTick();
     }
 }

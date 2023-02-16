@@ -74,7 +74,8 @@
     </Compile>
     <Compile Include="Form\Program.cs" />
     <Compile Include="Labirint\Block.cs" />
-    <Compile Include="Labirint\GenirateLabirint.cs" />
+    <Compile Include="Labirint\Generation.cs" />
+    <Compile Include="Labirint\GenerationLabirint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
