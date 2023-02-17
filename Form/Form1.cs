@@ -23,6 +23,8 @@ public partial class Form1 : Form
         groupBox.Location = new Point(-400, -400);
         groupBox.Enabled = false;
 
+        RectSZ = int.TryParse(Size.Text, out int SZ) ? SZ : 0;
+
         var x = int.TryParse(XPos.Text, out int X) ? Limit(X, Width / RectSZ) : 0;
         var y = int.TryParse(YPos.Text, out int Y) ? Limit(Y, Height / RectSZ) : 0;
 
